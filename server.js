@@ -49,7 +49,7 @@ const users = [
 app.use(bodyParser.json());
 app.use(cors());
 app.get('/',(req,res)=>{
-    res.send(users);
+    res.send('It is working');
     
 });
 //--> /Signin 
