@@ -90,7 +90,7 @@ app.get('/profile/:id', (req,res)=>{
     // }
 });
 
-const API = new Clarifai.App({ apiKey: "3c10409212944e42865dfa38fdd16256" });
+const API = new Clarifai.App({ apiKey: process.env.Clarifai });
 const handleApiCall =(req,res) =>{
     API.models
             .predict("a403429f2ddf4b49b307e318f00e528b",
